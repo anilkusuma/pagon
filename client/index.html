@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character set configuration -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport configuration, scaling options -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Hide the browser UI -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Android toolbar color -->
+    <meta name="theme-color" content="#69f0ae">
+
+
+    <!-- Web app manifest file -->
+    <link rel="manifest" href="favicons/manifest.json">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="libs/materialize/css/materialize.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amaranth|Italiana|Signika|Source+Sans+Pro|Inconsolata|Fira+Sans
+">
+    <link rel="stylesheet" href="./styles/css/style.css">
+
+    <!-- Site title -->
+    <title>Pagon</title>
+</head>
+<body>
+    
+    
+    
+    <div id="wrapper">
+        <!-- Navigation bar -->
+                             
+        <div class="navbar-fixed" id="nav">
+            <ul id="productsDropdown" class="dropdown-content">
+                          <li><a href="./FleetManagement.html">Fleet Management</a></li>
+                          <li><a href="./BusTracking.html">Bus Tracking</a></li>
+                          <li><a href="./CourierTracking.html">Courier Tracking</a></li>
+                        </ul>
+            <nav class="my_nav">
+                <div class="nav-wrapper">
+
+                    <!-- Site name -->
+                    <a class="brand-logo"><img src="./images/logo-title.png" alt="Pagon Logo"></img></a>
+
+                    <!-- Mobile menu button -->
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                
+                    <!-- drop down structure -->
+                    
+                    <!-- Static menu -->
+                    <ul class="right hide-on-med-and-down table-of-contents text-white">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About Us</a></li>
+                        <li><a class="products-dropdown" href="" data-activates="productsDropdown">Products</a></li>  
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="http://demo.pagon.in/vts/">Login</a></li>
+                    </ul>
+
+                    <!-- Mobile menu, make sure it is equal to the statis menu -->
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About Us</a></li>
+                        <li><a class="products-dropdown" href="" data-activates="productsDropdown">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="http://demo.pagon.in/vts">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="bannerSection" id="banner">
+            <img src="./images/full01.jpg" class="bannerImage">
+            <div class="bannerSlides" id="slides">
+                <div class="owl-carousel owl-theme bannerOwl">
+                    <div class="row slideOwlRow1">
+                        <div class="slideOwlImgCol1 imgBaseCol col s12 m4">
+                            <img class="img1 responsive-img" src="images/HandHeldIphone.png">
+                        </div>
+                        <div class="slideOwlTagCol1 descriptionBaseCol col s12 m8">
+                            <div class="row tagRow">
+                                <div class="col s12 tagCol">
+                                    <span>Track any where at any time.</span>
+                                </div>
+                            </div>
+                            <div class="row descriptionRow">
+                                <div class="col s12 descriptionCol">
+                                    <span>- "With our mobile application manage your fleet or let customers track their courier or bus from any where with single click. Get timely alerts to your mobile."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row slideOwlRow2">
+                        <div class="slideOwlImgCol2 imgBaseCol col s12 m4">
+                            <img class="img1 responsive-img" src="images/WithLag.png">
+                        </div>
+                        <div class="slideOwlTagCol2 descriptionBaseCol col s12 m8">
+                            <div class="row tagRow">
+                                <div class="col s12 tagCol">
+                                    <span>No More Waiting At Bus Stops</span>
+                                </div>
+                            </div>
+                            <div class="row descriptionRow">
+                                <div class="col s12 descriptionCol">
+                                    <span>- "With our new customer portal link, provide location details and automated delay alerts of bus to all the passengers of the bus.Only passengers reserved for a trip get access to location details till trip ends ."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row slideOwlRow3">
+                        <div class="slideOwlImgCol3 imgBaseCol col s12 m4">
+                            <img class="img1 responsive-img" src="images/CustomerCare.png">
+                        </div>
+                        <div class="slideOwlTagCol3 descriptionBaseCol col s12 m8">
+                            <div class="row tagRow">
+                                <div class="col s12 tagCol">
+                                    <span>One App For All Customer Quires.</span>
+                                </div>
+                            </div>
+                            <div class="row descriptionRow">
+                                <div class="col s12 descriptionCol">
+                                    <span>- "With a new consolidated care executive ui know accurate location and details of all the couriers that needs to be delivered.Provide the courier location details to respective recipient and get rid of all customer query calls."</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row slideOwlRow4">
+                        <div class="slideOwlImgCol4 imgBaseCol col s12 m4">
+                            <img class="img1 responsive-img" src="images/Profits.png">
+                        </div>
+                        <div class="slideOwlTagCol4 descriptionBaseCol col s12 m8">
+                            <div class="row tagRow">
+                                <div class="col s12 tagCol">
+                                    <span>Turn Losses To Profits.</span>
+                                </div>
+                            </div>
+                            <div class="row descriptionRow">
+                                <div class="col s12 descriptionCol">
+                                    <span>- "With fully advanced admin ui track all vehicles location,monitor distance travelled,analyise fuel costs ,estimate trip expenses . Get alerts for theft,geo fence ,route voilation etc.Get consolidated reports to email"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="productsOutline unit" id="products">
+            <div class="row productHeading heading">
+                <div class="col s12 fleetManagerHeading headingCol">
+                    <div class="fleetManagerHeading headingDiv">
+                        <span>Our Solutions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row productsRow">
+                <div class="col s12 m6 l4">
+                    <div class="card fleetManagerCard hoverable productCard">
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="fleetManagerVideoDiv productVideoDiv">
+                                    <iframe 
+                                        src="http://www.youtube.com/embed/EZT9BojTnB8?autoplay=0&autohide=1">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="fleetManagerSpanDiv productSpanDiv">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of a kind solution in the market for making fleet management a dooble.</br></br>
+                                    &nbsp;&nbsp;&nbsp;Pagon <b class="pname"><i>FleetManagement</i></b> application with unique feautres and material design makes using the application very easy for everyone.Get all the information regarding your vehicles at a click of the button.</span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="fleetManagerKnowMoreDiv productKnowMore">
+                                    <a class="knowMoreButton btn waves-effect waves-light">know More..</a>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card travelBusTrackingCard hoverable productCard">
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="travelBusTrackingCardDiv productVideoDiv">
+                                    <iframe 
+                                        src="http://www.youtube.com/embed/-IffyvRHu_Q?autoplay=0&autohide=1">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="travelBusTrackingSpanDiv productSpanDiv">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With Pagon's <b class="pname"><i>BusTracking</i></b> application get an edge over your competitors in terms of customer satisfaction.
+                                        </br></br>&nbsp;&nbsp;&nbsp;BusTracking includes all the advantages of fleetManagement with an added feature of providing accurate tracking,delay and missing alerts to your customers during theri journey time.</span>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="fleetManagerKnowMoreDiv productKnowMore">
+                                    <a class="knowMoreButton btn waves-effect waves-light">know More..</a>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card courierTrackingCard hoverable productCard">
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="courierTrackingVideoDiv productVideoDiv">
+                                    <iframe 
+                                        src="http://www.youtube.com/embed/m3f-PdlnJqQ?autoplay=0&autohide=1">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="courierTrackingSpanDiv productSpanDiv">
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For all the courier service providers, no more text alerts to customers,no more thousands of customer calls for location enquiry.Provide personalised tracking of their courier to customers.
+                                    </br></br>&nbsp;&nbsp;&nbsp;Pagon <b class="pname"><i>CourierTracking</i></b> application is used in various fields like Packers & Movers,Fastrack Courier services and e-commerce delivary services.</span>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row s12">
+                            <div class="col s12">
+                                <div class="courierTrackingSpanDiv productKnowMore">
+                                    <a class="knowMoreButton btn waves-effect waves-light">know More..</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pnc">
+            <div class="divider"></div>
+        </div>
+        <div class="customerTestimonials scrollspy unit" id="testimonials">
+            <div class="row productHeading heading">
+                <div class="col s12 testimonialsHeading headingCol">
+                    <div class="testimonialsHeading headingDiv">
+                        <span>Testimonials</span>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax">
+                  <div class="overlay"></div>
+                  <img src="./images/bg3.jpg">
+                </div>
+                <div class="container">
+                  <div class="own-slider">
+                    <ul class="own-slides">
+                        <div class="raylight"></div>
+                        <div class="title-testimonials">
+                            <span class="title-meaning ">What our customers are saying</span>
+                        </div>
+                      <div id="testimonials-owl" class="owl-carousel">
+                          <div class="owl-content">
+                              <li>
+                                <div class="not-caption"> 
+                                    <img class=" customer-image circle responsive-img" src="./images/1.jpg" alt="John Doe">
+                                    <div class="star-rating">
+                                        <ul class="rating">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <small>5 stars</small>
+                                    </div>
+                                    <div class="review">
+                                            <p>Pagon made maintaining my 400 vehicles fleet so efficient.I get everything i need with just single click.</p>
+                                            <p>From Reports to servicing ,theft alerts to route deviation pagon updates me with everything.</p>
+                                            <footer>-  Mahesh Kumar<cite title="Source Title">.Owner of Mahesh Transport Pvt Ltd.</cite></footer>
+                                    </div>
+                                </div>
+                              </li>
+                          </div>
+                          <div class="owl-content">
+                              <li>
+                                <div class="not-caption"> 
+                                    <img class=" customer-image circle responsive-img" src="./images/2.jpg" alt="John Doe">
+                                    <div class="star-rating">
+                                        <ul class="rating">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <small>4 stars</small>
+                                    </div>
+                                    <div class="review">
+                                            <p>I can't thank pagon enough for what it done to me.I got all my problmes in maintatining our school buses cleared by the pagon school bus tracker application.</p>
+                                            <p>It gives all the info i need, i don't have to shout or loose my cool to get that info anymore.</p>
+                                            <footer>-  Md Younus<cite title="Source Title">.Director of Yuva Sangatan High School.</cite></footer>
+                                    </div>
+                                </div>
+                              </li>
+                          </div>
+                          <div class="owl-content">
+                              <li>
+                                <div class="not-caption"> 
+                                    <img class=" customer-image circle responsive-img" src="./images/3.jpg" alt="John Doe">
+                                    <div class="star-rating">
+                                        <ul class="rating">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <small>4.5 stars</small>
+                                    </div>
+                                    <div class="review">
+                                            <p>I used to wait on road hours for my childs school bus.After school buses equipped with pagon school bus tracking, i can reach pickup and drop point just before seconds of arrival.</p>
+                                            <p>I can continuously monitor my childrean sitting any where and plan my schedule based on their location.</p>
+                                            <footer>-  Srikanth Reddy<cite title="Source Title">.Father</cite></footer>
+                                    </div>
+                                </div>
+                              </li>
+                          </div>
+                          <div class="owl-content">
+                              <li>
+                                <div class="not-caption"> 
+                                    <img class=" customer-image circle responsive-img" src="./images/4.jpg" alt="John Doe">
+                                    <div class="star-rating">
+                                        <ul class="rating">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <small>4.5 stars</small>
+                                    </div>
+                                    <div class="review">
+                                            <p>I got my school equipped with pagon school bus tracking and attandance management system.Now i got so much less things to worry about and focus more on my school administration.</p>
+                                            <p>No more hours of time wasting on manual text messages alerts for absent childrean,no more attendence sheets,caliculations and mistakes.All done with just one click.</p>
+                                            <footer>-  Sumith Agarwal<cite title="Source Title">.Director of Chirec Public School.</cite></footer>
+                                    </div>
+                                </div>
+                              </li>
+                          </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tnc">
+            <div class="divider"></div>
+        </div>
+        <!-- Contact form section -->
+        <div class="contactUs unit scrollspy" id="contact">
+            <div class="row contactUsHeading heading">
+                <div class="col s12 contactUsHeading headingCol">
+                    <div class="contactUsHeading headingDiv">
+                        <span>Contact Us</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="flow-text demo-matter center-align">
+                        Don't stop looking just our website , see Pagon in action . Order a free demo and see what wonders our applications can do. 
+                    </p>
+                    <p class="flow-text demo-matter demo-high center-align">Action speaks more then words.</p>
+                    <p class="right-align">
+                        <i class="fa fa-info-circle"></i> Last name is not required.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col s12" action="php/mailer.php" id="contact-form" novalidate>
+                    <!-- This field helps us avoid spam bots, don't remove it -->
+                    <div class="cant-touch-this">
+                        <input type="text" name="hammertime" tabindex="-1" value="">
+                    </div>
+                    <!-- End of anti-spam field -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first-name" name="first-name" type="text" class="required">
+                            <label for="first-name">First name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last-name" name="last-name" type="text">
+                            <label for="last-name">Last name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" name="email" type="email" class="required">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="message" name="message" class="materialize-textarea required"></textarea>
+                                <label for="message">Message</label>
+                        </div>
+                    </div>
+                    <div class="center-align">
+                        <button type="submit" name="send" class="btn-large disabled">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="wide-container">
+            <div class="row">
+                <div class="col s12">
+                        <!-- Google map container -->
+                    <div id="map-canvas" class="map"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container contact-details">
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <h5>Headquarters</h5>
+                    <div class="divider"></div>
+                    <address>
+                       T-Hub Foundation<br>
+                        Catalyst,IIT-Hyd Campus<br>
+                        Gachibowli,Hyderabad-500032<br>
+                    </address>
+                </div>
+                <div class="col s12 m6 l4">
+                    <h5>Reach us</h5>
+                    <div class="divider"></div>
+                        <p>
+                            +919494920770<br>
+                            <a href="mailto:hello@wata.com">contact_us@pagon.in</a>
+                        </p>
+                    </div>
+                    <div class="col s12 m6 l4 modern-connect">
+                        <h5>Modern connect</h5>
+                        <div class="divider"></div>
+                        <p>
+                            <!-- Add your Skype link here -->
+                            <a href="skype:pagon?chat"><i class="fa fa-skype"></i>pagon.skype</a><br>
+                            <a href="#!"><i class="fa fa-facebook"></i>pagon.facebook</a><br>
+                            <a href="#!"><i class="fa fa-google-plus"></i>pagon.google</a><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer section -->
+            <footer class="page-footer">
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2015 Pagon Technologies Pvt Ltd.
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+
+    <!-- Scripts-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBm0t5b6gyo6Go1EbYXT203rXeGOvfNug"></script>
+    <script src="./libs/jquery/jquery-2.1.1.js"></script>
+    <script src="./libs/materialize/js/materialize.min.js"></script>
+    <script src="./libs/greensock/src/minified/TweenMax.min.js"></script>
+    <script src="./libs/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="./libs/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="./libs/greensock/src/minified/easing/EasePack.min.js"></script>
+    <script src="./libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./scripts/index.js"></script>
+    
+</body>
+</html>

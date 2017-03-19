@@ -1,0 +1,96 @@
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    white-space: nowrap;
+}
+nav .brand-logo img {
+    z-index: 9999;
+    height: 64px;
+}
+nav {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+nav .table-of-contents a.active, nav .table-of-contents a:hover {
+    color: white;
+    border: none;
+    padding-left: 20px;
+    border-bottom: 4px solid black;
+}
+nav ul li {
+    transition: background-color .3s;
+    float: left;
+    padding: 0;
+}
+nav .table-of-contents a {
+    display: block;
+    height: 64px;
+    line-height: 64px;
+    font-weight: normal;
+    color: black;
+    border: none;
+}
+.bannerSection{
+    background-image: url('../../images/full01.jpg');
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    height: 100vh;
+    top: -64px;
+    -webkit-filter: saturate(1);
+}
+.my_nav{
+    box-shadow: none !important;
+}
+.bannerSlides{
+    position: relative;
+    top: 250px;
+    
+}
+.slideOwlImgCol1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.slideOwlTagCol1 .tagCol span {
+    font-weight: 400;
+    font-size: 3vw;
+    position: relative;
+    color: black;
+    font-family: Amaranth;
+    background-color: #6FD0D6;
+    padding: 8px;
+}
+.slideOwlTagCol1 .descriptionCol span {
+    font-weight: 700;
+    font-size: 2vw;
+    position: relative;
+    color: black;
+    padding: 8px;
+    font-style: italic;
+    font-style: bold;
+    font-family: Source Sans Pro;
+}
+
+.descriptionCol{
+    padding-top:20px !important;
+    padding-bottom: 10px !important;
+    padding-left: 80px !important; 
+}
+
+.tagCol{
+    padding: 10px !important;
+    margin-top:10px;
+}
+    
+.slideOwlTagCol1 {
+    margin-top: 25px;
+}
+.slideOwlImgCol1 img {
+    opacity: 0;
+}

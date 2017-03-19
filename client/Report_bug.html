@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character set configuration -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport configuration, scaling options -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Hide the browser UI -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Android toolbar color -->
+    <meta name="theme-color" content="#69f0ae">
+
+    <!-- Android touch icons -->
+    <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+
+    <!-- Web app manifest file -->
+    <link rel="manifest" href="favicons/manifest.json">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="libs/materialize/css/materialize.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/css/wata.css">
+
+    <!-- Site title -->
+    <title>Pagon</title>
+</head>
+<body>
+    
+    
+    
+    <div id="wrapper">
+
+        <!-- The preloader we see before the whole site is loaded -->
+        <div id="preloader" class="valign-wrapper">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-green-only actually-black">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A status spinner to indicate that some process is going on -->
+        <div id="status">
+            <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-blue-only actually-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation bar -->
+        <div class="navbar-fixed " id="nav">
+            <nav class="my_nav">
+                <div class="nav-wrapper">
+
+                    <!-- Site name -->
+                    <a class="brand-logo"><img src="./images/logo-title.png" alt="Pagon Logo"></img></a>
+
+                    <!-- Mobile menu button -->
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+                    <!-- Static menu -->
+                    <ul class="right hide-on-med-and-down table-of-contents text-white">
+                        <li><a href="#triangles">Home</a></li>
+                        <li><a href="#services">About Us</a></li>
+                        <li><a href="#features">Products</a></li>
+                        <!--li><a href="#about">About</a></li-->
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./dashboard/html/pages/login.html">Login</a></li>
+                    </ul>
+
+                    <!-- Mobile menu, make sure it is equal to the statis menu -->
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="#triangles">Home</a></li>
+                        <li><a href="#services">About Us</a></li>
+                        <li><a href="#features">Products</a></li>
+                        <!--li><a href="#about">About</a></li-->
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./dashboard/html/pages/login.html">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Triangles section -->
+        <div id="triangles" class="scrollspy">
+            <div id="output">
+                <div class="h1-wrapper valign-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <!-- Your company's slogan, feel free to add more tags here -->
+                                <h2 class="title-class">Your progress is our success</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s4 offset-s4 center-align">
+                                <a class="waves-effect waves-light btn demo-button white-text" href="#contact"><i class="fa fa-play-circle left"></i>Request Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Action button -->
+                    <a class="btn-floating btn-large waves-effect waves-dark green accent-2" id="explore">
+                        <i class="mdi-navigation-arrow-forward indigo-text text-darken-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <div class="content-part">
+        <!-- Services section -->
+        <div class="section scrollspy" id="services">
+            <div class="container">
+                <div class="row">
+                    <h2 class="aboutus-title">We are Pagon</h2>
+                    <div class="col s12">
+                        <p class="flow-text aboutus-matter center-align">
+                            With our experties in embedded systems and telecommunications , we develop hardware devices required for your business . When these deivce meets with our beautifully crafted software solution makes an amzing products which changes your business process and adds value to it. 
+                        </p>
+                        <p class="flow-text aboutus-matter impo center-align">
+                            All our products are designed,manufractured and supported in our own facility with out involvement of any third-parties. This makes us trust worthy then others in the field.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Row with service icons -->
+                <div class="row services">
+                    <div class="col s12 l3">
+                        <i class="fa fa-5x  fa-university"></i>
+                        <div class="divider"></div>
+                        <h5>Integrated Platform</h5>
+                        <p>A signle platform that can replace all standalone applications you are using. Every product includes all features supported by different applications available in market in to one amazing product.</p>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="fa fa-5x fa-desktop"></i>
+                        <div class="divider"></div>
+                        <h5>Intutive Design</h5>
+                        <p>A intutive user experience which hepls you and your employees to have a frustration free mind and focus on their work.User will never experiances any lag or crashes</p>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="fa fa-5x fa-cog"></i>
+                        <div class="divider"></div>
+                        <h5>Easy Implementation</h5>
+                        <p>With our easy installation steps and data migration support,your business can go live instantly without any down time.All the installation and update documentation will be provided.</p>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="fa fa-5x fa-money"></i>
+                        <div class="divider"></div>
+                        <h5>Affordable Solution</h5>
+                        <p>With our single integrated solution , along with the reduction of payments to all your standalone applications you will get all the benifits and 24x7 customer support at very low prices. </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+        <div class="scrollspy section" id="features">
+            <h2 class="title-heading text-center">Our Major Products</h2>
+            <div class="parallax-container">
+                <div class="parallax"><div class="overlay"></div><img src="./images/electronics.jpg"></div>
+                <div class="container product-container">
+                   <div class="row  product-card-row">
+                     <div class="col s12 m5 l4">
+                        <div class="card product-card hoverable">
+                            <div class="card-image waves-effect waves-light">
+                                <img src="images/Fleet%20manager.jpg">
+                            </div>
+                            <div class="content">
+                                <p class="product-name">Fleet Manager</p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col s12 m5 l4">
+                        <div class="card product-card hoverable">
+                            <div class="card-image waves-effect waves-light">
+                                <img src="images/school%20bus%20tracking.jpg">
+                            </div>
+                            <div class="content">
+                                <p class="product-name">School Bus Tracker</p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col s12 m5 l4">
+                        <div class="card product-card hoverable">
+                            <div class="card-image waves-effect waves-light">
+                                <img src="images/Remote%20Data%20Logger.jpg">
+                            </div>
+                            <div class="content">
+                                <p class="product-name">Remote Data Logger</p>
+                            </div>
+                        </div>
+                     </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+    
+    <div class="section scrollspy" id="team">
+	   <div class="container">
+		<h2 class="title-heading text-center">Our team</h2>
+		<div class="row">
+			<div class="col s12 m4 l3">
+                <div class="card aboutus-card hoverable">
+                    <div class="profile-image">
+                        <img src="./images/team/thumb1.jpg" alt="profile-img">
+                    </div>
+                    <div class="profile-content">
+                        <span class="name-title grey-text text-darken-4">Muthe Srinivas</span>
+						<p class="colored">Founder & CEO</p>
+						<div class="social">
+							<ul>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Pinterest"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="col s12 m4 l3">
+                <div class="card aboutus-card hoverable">
+                    <div class="profile-image">
+                        <img src="./images/team/thumb2.jpg" alt="profile-img">
+                    </div>
+                    <div class="profile-content">
+                        <span class="name-title grey-text text-darken-4">Pranay Kumar</span>
+						<p class="colored">Creative Designer</p>
+						<div class="social">
+							<ul>
+								<li><a class="tip" data-toggle="tooltip" href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Pinterest"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="col s12 m4 l3">
+                <div class="card aboutus-card hoverable">
+                    <div class="profile-image">
+                        <img src="./images/team/thumb3.jpg" alt="profile-img">
+                    </div>
+                    <div class="profile-content">
+                        <span class="name-title grey-text text-darken-4">Anil kusuma</span>
+						<p class="colored">Project Manager</p>
+						<div class="social">
+							<ul>
+								<li><a class="tip" data-toggle="tooltip" href="https://twitter.com/anilnitw" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="https://www.linkedin.com/in/anil-kumar-2965874a?trk=nav_responsive_tab_profile_pic" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="https://www.facebook.com/profile.php?id=100001261101192" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="https://plus.google.com/u/0/112142728257777518942" title="Pinterest"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="col s12 m4 l3">
+                <div class="card aboutus-card hoverable">
+                    <div class="profile-image">
+                        <img src="./images/team/thumb4.jpg" alt="profile-img">
+                    </div>
+                    <div class="profile-content">
+                        <span class="name-title grey-text text-darken-4">Praveen Kumar</span>
+						<p class="colored">Marketing Manager</p>
+						<div class="social">
+							<ul>
+								<li><a class="tip" data-toggle="tooltip" href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="tip" data-toggle="tooltip"  href="javascript:void(0);" title="Pinterest"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+	 
+    <div class="container">
+            <div class="divider"></div>
+    </div>
+    
+   
+    
+	<!-- user/client testimonials -->
+	<div class="scrollspy section" id="testimonials">
+    <div class="parallax-container">
+      <div class="parallax"><div class="overlay"></div><img src="./images/bg3.jpg"></div>
+        <div class="container">
+          <div class="own-slider">
+            <ul class="own-slides">
+                <div class="title-testimonials">
+                    <span class="title-heading">Testimonials</span></br>
+                    <span class="title-meaning ">What our customers are saying</span>
+                </div>
+              <li>
+                <div class="not-caption"> 
+                    <img class=" customer-image circle responsive-img" src="./images/1.jpg" alt="John Doe">
+				    <div class="star-rating">
+				        <ul class="rating">
+				            <li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+				        </ul>
+                        <small>5 stars</small>
+                    </div>
+				    <div class="review">
+							<p>Pagon made maintaining my 400 vehicles fleet so efficient.I get everything i need with just single click.</p>
+                            <p>From Reports to servicing ,theft alerts to route deviation pagon updates me with everything.</p>
+							<footer>-  Mahesh Kumar<cite title="Source Title">.Owner of Mahesh Transport Pvt Ltd.</cite></footer>
+				    </div>
+				</div>
+              </li>
+              <!--li>
+                <div class="not-caption"> 
+                    <img class=" customer-image circle responsive-img" src="./images/2.jpg" alt="John Doe">
+				    <div class="star-rating">
+				        <ul class="rating">
+				            <li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+				        </ul>
+                        <small>5 stars</small>
+                    </div>
+				    <blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros velit. In luctus lectus non purus dignissim vestibulum.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				    </blockquote>
+				</div>
+              </li>
+              <!--li>
+                <div class="not-caption"> 
+                    <img class=" customer-image circle responsive-img" src="./images/3.jpg" alt="John Doe">
+				    <div class="star-rating">
+				        <ul class="rating">
+				            <li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+				        </ul>
+                        <small>5 stars</small>
+                    </div>
+				    <blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros velit. In luctus lectus non purus dignissim vestibulum.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				    </blockquote>
+				</div>
+              </li>
+              <li>
+                <div class="not-caption"> 
+                    <img class=" customer-image circle responsive-img" src="./images/4.jpg" alt="John Doe">
+				    <div class="star-rating">
+				        <ul class="rating">
+				            <li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+				        </ul>
+                        <small>5 stars</small>
+                    </div>
+				    <blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros velit. In luctus lectus non purus dignissim vestibulum.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				    </blockquote>
+				</div>
+              </li>
+              <li>
+                <div class="not-caption"> 
+                    <img class=" customer-image circle responsive-img" src="./images/5.jpg" alt="John Doe">
+				    <div class="star-rating">
+				        <ul class="rating">
+				            <li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+				        </ul>
+                        <small>5 stars</small>
+                    </div>
+				    <blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros velit. In luctus lectus non purus dignissim vestibulum.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				    </blockquote>
+				</div>
+              </li>
+              <li>
+                <div class="not-caption"> 
+                    <img class=" customer-image circle responsive-img" src="./images/6.jpg" alt="John Doe">
+				    <div class="star-rating">
+				        <ul class="rating">
+				            <li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+				        </ul>
+                        <small>5 stars</small>
+                    </div>
+				    <blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros velit. In luctus lectus non purus dignissim vestibulum.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				    </blockquote>
+				</div>
+              </li-->
+            </ul>
+          </div>
+        </div>
+     </div>
+    </div>
+
+        <!-- Blog section -->
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        <!-- Contact form section -->
+        <div class="section scrollspy" id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2>Request demo</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text demo-matter center-align">
+                            Don't stop looking just our website , see Pagon in action . Order a free demo and see what wonders our applications can do. 
+                        </p>
+                        <p class="flow-text demo-matter demo-high center-align">Action speaks more then words.</p>
+                        <p class="right-align">
+                            <i class="fa fa-info-circle"></i> Last name is not required.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="col s12 m12 l8 offset-l2" action="php/mailer.php" id="contact-form" novalidate>
+                        <!-- This field helps us avoid spam bots, don't remove it -->
+                        <div class="cant-touch-this">
+                            <input type="text" name="hammertime" tabindex="-1" value="">
+                        </div>
+                        <!-- End of anti-spam field -->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first-name" name="first-name" type="text" class="required">
+                                <label for="first-name">First name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last-name" name="last-name" type="text">
+                                <label for="last-name">Last name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" name="email" type="email" class="required">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" name="message" class="materialize-textarea required"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            <button type="submit" name="send" class="btn-large disabled">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="wide-container">
+                <div class="row">
+                    <div class="col s12">
+                        <!-- Google map container -->
+                        <div id="map-canvas" class="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container contact-details">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <h5>Headquarters</h5>
+                        <div class="divider"></div>
+                        <address>
+                            1-57/229<br>
+                            Sri Ram Nagar Colony, Kothaguda<br>
+                            Hyderabad<br>
+                        </address>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <h5>Reach us</h5>
+                        <div class="divider"></div>
+                        <p>
+                            +919494920770<br>
+                            <a href="mailto:hello@wata.com">contact_us@pagon.in</a>
+                        </p>
+                    </div>
+                    <div class="col s12 m6 l4 modern-connect">
+                        <h5>Modern connect</h5>
+                        <div class="divider"></div>
+                        <p>
+                            <!-- Add your Skype link here -->
+                            <a href="skype:pagon?chat"><i class="fa fa-skype"></i>pagon.skype</a><br>
+                            <a href="#!"><i class="fa fa-facebook"></i>pagon.facebook</a><br>
+                            <a href="#!"><i class="fa fa-google-plus"></i>pagon.google</a><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2015 Pagon Technologies Pvt Ltd.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+    <!-- Scripts-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/build.js"></script>
+   
+
+
+    <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+        
+    });
+
+
+            
+    
+    $(document).ready(function(){
+        
+    var triangles = document.getElementById('triangles'),
+        nav = document.getElementById('nav'),
+        scrollPosition,
+        navHeight,
+        trianglesHeight;
+        
+    
+    function resizeTriangles() {
+        windowHeight = window.innerHeight;
+        trianglesHeight = windowHeight;
+        triangles.style.height = trianglesHeight + 'px';
+    } 
+     
+    window.addEventListener('scroll',function(){
+        console.log("in scrool ");
+         trianglesHeight = triangles.clientHeight;
+        scrollPosition = $(window).scrollTop();
+        if(scrollPosition == 0)
+            resizeTriangles();
+        if(scrollPosition > (trianglesHeight- 100)){
+            console.log("in if position");
+            nav.className="navbar-fixed active";
+        }else{
+            console.log("in if position");
+            nav.className = "navbar-fixed";
+        }
+    },false);
+});
+        
+    </script>
+    
+    
+</body>
+</html>

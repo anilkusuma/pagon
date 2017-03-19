@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character set configuration -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport configuration, scaling options -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Hide the browser UI -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Android toolbar color -->
+    <meta name="theme-color" content="#69f0ae">
+
+
+    <!-- Web app manifest file -->
+    <link rel="manifest" href="favicons/manifest.json">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="libs/materialize/css/materialize.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/css/wata.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.transitions.css">
+
+    <!-- Site title -->
+    <title>Pagon</title>
+</head>
+<body>
+    
+    
+    
+    <div id="wrapper">
+
+        <!-- The preloader we see before the whole site is loaded -->
+        <div id="preloader" class="valign-wrapper">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-green-only actually-black">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A status spinner to indicate that some process is going on -->
+        <div id="status">
+            <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-blue-only actually-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation bar -->
+        <div class="navbar-fixed " id="nav">
+            <nav class="my_nav">
+                <div class="nav-wrapper">
+
+                    <!-- Site name -->
+                    <a class="brand-logo"><img src="./images/logo-title.png" alt="Pagon Logo"></img></a>
+
+                    <!-- Mobile menu button -->
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+                    <!-- Static menu -->
+                    <ul class="right hide-on-med-and-down table-of-contents text-white">
+                        <li><a href="#triangles">Home</a></li>
+                        <li><a href="#services">About Us</a></li>
+                        <li><a href="#features">Products</a></li>
+                        <!--li><a href="#about">About</a></li-->
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="http://sbtportal.pagon.in/vts/">Login</a></li>
+                    </ul>
+
+                    <!-- Mobile menu, make sure it is equal to the statis menu -->
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="#triangles">Home</a></li>
+                        <li><a href="#services">About Us</a></li>
+                        <li><a href="#features">Products</a></li>
+                        <!--li><a href="#about">About</a></li-->
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="http://sbtportal.pagon.in/vts">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Triangles section -->
+        <div id="triangles" class="scrollspy">
+            <div id="output">
+                <div class="h1-wrapper valign-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <!-- Your company's slogan, feel free to add more tags here -->
+                                <h2 class="title-class">Your progress is our success</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s4 offset-s4 center-align">
+                                <a class="waves-effect waves-light btn demo-button white-text" href="#contact"><i class="fa fa-play-circle left"></i>Request Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Action button -->
+                    <a class="btn-floating btn-large waves-effect waves-dark green accent-2" id="explore">
+                        <i class="mdi-navigation-arrow-forward indigo-text text-darken-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <div class="content-part">
+        <!-- Services section -->
+        <div class="section scrollspy" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="section-col">
+                        <div class="section-heading">
+                            <div class="perspectiveH1">
+                                <h1 class="bgViolet rotateH1 rotateH1LU">WE ARE PAGON</h1>
+                            </div>
+                        </div>
+                    </div>
+                                    
+                    
+                    
+                    <div class="col s12">
+                        <p class="flow-text aboutus-matter center-align">
+                            With our experties in embedded systems and telecommunications , we develop hardware devices required for your business . When these deivce meets with our beautifully crafted software solution makes an amzing products which changes your business process and adds value to it. 
+                        </p>
+                        <p class="flow-text aboutus-matter impo center-align">
+                            All our products are designed,manufractured and supported in our own facility with out involvement of any third-parties. This makes us trust worthy then others in the market.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Row with service icons -->
+                <div class="row services">
+                    <div class="col s12 l3 university ">
+                        <i class="fa fa-5x  fa-university"></i>
+                        <div class="divider"></div>
+                        <h5>Integrated Platform</h5>
+                        <p>A signle platform that can replace all standalone applications you are using. Every product includes all features supported by different applications available in market in to one amazing product.</p>
+                    </div>
+                    <div class="col s12 l3 desktop">
+                        <i class="fa fa-5x fa-desktop"></i>
+                        <div class="divider"></div>
+                        <h5>Intutive Design</h5>
+                        <p>A intutive user experience which hepls you and your employees to have a frustration free mind and focus on their work.User will never experiances any lag or crashes</p>
+                    </div>
+                    <div class="col s12 l3 cog">
+                        <i class="fa fa-5x fa-cog"></i>
+                        <div class="divider"></div>
+                        <h5>Easy Implementation</h5>
+                        <p>With our easy installation steps and data migration support,your business can go live instantly without any down time.All the installation and update documentation will be provided.</p>
+                    </div>
+                    <div class="col s12 l3 money">
+                        <i class="fa fa-5x fa-money"></i>
+                        <div class="divider"></div>
+                        <h5>Affordable Solution</h5>
+                        <p>With our single integrated solution , along with the reduction of payments to all your standalone applications you will get all the benifits and 24x7 customer support at very low prices. </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+        <div class="scrollspy section" id="features">
+            <div class="perspectiveH1">
+                    <h1 class="bgViolet rotateH1 rotateH1MP">Major Products</h1>
+            </div>           
+            <div class="parallax-container">
+                <div class="parallax"><div class="overlay"></div><img src="./images/electronics.jpg"></div>
+                <div class="container product-container">
+                   <div class="row  product-card-row">
+                     <div class="col s12 m5 l4">
+                        <div class="card product-card hoverable">
+                            <div class="card-image waves-effect waves-light">
+                                <img src="images/Fleet%20manager.jpg">
+                                <div class="know_more_idv">
+                                    <a class="waves-effect waves-light btn know-button white-text"><i class="mdi-action-info-outline white-text left"></i>KNOW MORE</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="product-name">Fleet Manager</p>
+                            </div>
+                        </div>  
+                     </div>
+                     <div class="col s12 m5 l4">
+                        <div class="card product-card hoverable">
+                            <div class="card-image waves-effect waves-light">
+                                <img src="images/school%20bus%20tracking.jpg">
+                                <div class="know_more_idv">
+                                    <a class="waves-effect waves-light btn know-button white-text"><i class="mdi-action-info-outline white-text left"></i>KNOW MORE</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="product-name">School Bus Tracker</p>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="col s12 m5 l4">
+                        <div class="card product-card hoverable">
+                            <div class="card-image waves-effect waves-light">
+                                <img src="images/Remote%20Data%20Logger.jpg">
+                                <div class="know_more_idv">
+                                    <a class="waves-effect waves-light btn know-button white-text"><i class="mdi-action-info-outline white-text left"></i>KNOW MORE</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="product-name">Remote Data Logger</p>
+                            </div>
+                        </div>
+                     </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+            <div class="divider"></div>
+    </div>
+    
+   
+    
+	<!-- user/client testimonials -->
+	<div class="scrollspy section" id="testimonials">
+    <div class="parallax-container ">
+      <div class="parallax"><div class="overlay"></div><img src="./images/bg3.jpg"></div>
+        <div class="container">
+          <div class="own-slider">
+            <ul class="own-slides">
+                <div class="raylight"></div>
+                <div class="title-testimonials">
+                    <span class="title-heading">Testimonials</span></br>
+                    <span class="title-meaning ">What our customers are saying</span>
+                </div>
+              <div id="testimonials-owl" class="owl-carousel">
+                  <div class="owl-content">
+                      <li>
+                        <div class="not-caption"> 
+                            <img class=" customer-image circle responsive-img" src="./images/1.jpg" alt="John Doe">
+                            <div class="star-rating">
+                                <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <small>5 stars</small>
+                            </div>
+                            <div class="review">
+                                    <p>Pagon made maintaining my 400 vehicles fleet so efficient.I get everything i need with just single click.</p>
+                                    <p>From Reports to servicing ,theft alerts to route deviation pagon updates me with everything.</p>
+                                    <footer>-  Mahesh Kumar<cite title="Source Title">.Owner of Mahesh Transport Pvt Ltd.</cite></footer>
+                            </div>
+                        </div>
+                      </li>
+                  </div>
+                  <div class="owl-content">
+                      <li>
+                        <div class="not-caption"> 
+                            <img class=" customer-image circle responsive-img" src="./images/2.jpg" alt="John Doe">
+                            <div class="star-rating">
+                                <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <small>4 stars</small>
+                            </div>
+                            <div class="review">
+                                    <p>I can't thank pagon enough for what it done to me.I got all my problmes in maintatining our school buses cleared by the pagon school bus tracker application.</p>
+                                    <p>It gives all the info i need, i don't have to shout or loose my cool to get that info anymore.</p>
+                                    <footer>-  Md Younus<cite title="Source Title">.Director of Yuva Sangatan High School.</cite></footer>
+                            </div>
+                        </div>
+                      </li>
+                  </div>
+                  <div class="owl-content">
+                      <li>
+                        <div class="not-caption"> 
+                            <img class=" customer-image circle responsive-img" src="./images/3.jpg" alt="John Doe">
+                            <div class="star-rating">
+                                <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <small>4.5 stars</small>
+                            </div>
+                            <div class="review">
+                                    <p>I used to wait on road hours for my childs school bus.After school buses equipped with pagon school bus tracking, i can reach pickup and drop point just before seconds of arrival.</p>
+                                    <p>I can continuously monitor my childrean sitting any where and plan my schedule based on their location.</p>
+                                    <footer>-  Srikanth Reddy<cite title="Source Title">.Father</cite></footer>
+                            </div>
+                        </div>
+                      </li>
+                  </div>
+                  <div class="owl-content">
+                      <li>
+                        <div class="not-caption"> 
+                            <img class=" customer-image circle responsive-img" src="./images/4.jpg" alt="John Doe">
+                            <div class="star-rating">
+                                <ul class="rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <small>4.5 stars</small>
+                            </div>
+                            <div class="review">
+                                    <p>I got my school equipped with pagon school bus tracking and attandance management system.Now i got so much less things to worry about and focus more on my school administration.</p>
+                                    <p>No more hours of time wasting on manual text messages alerts for absent childrean,no more attendence sheets,caliculations and mistakes.All done with just one click.</p>
+                                    <footer>-  Sumith Agarwal<cite title="Source Title">.Director of Chirec Public School.</cite></footer>
+                            </div>
+                        </div>
+                      </li>
+                  </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+     </div>
+    </div>
+
+        <!-- Blog section -->
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        <!-- Contact form section -->
+        <div class="section scrollspy" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="perspectiveH1">
+                        <h1 class="bgViolet rotateH1 rotateH1CU">Contact Us</h1>
+                    </div> 
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text demo-matter center-align">
+                            Don't stop looking just our website , see Pagon in action . Order a free demo and see what wonders our applications can do. 
+                        </p>
+                        <p class="flow-text demo-matter demo-high center-align">Action speaks more then words.</p>
+                        <p class="right-align">
+                            <i class="fa fa-info-circle"></i> Last name is not required.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="col s12 m12 l8 offset-l2" action="php/mailer.php" id="contact-form" novalidate>
+                        <!-- This field helps us avoid spam bots, don't remove it -->
+                        <div class="cant-touch-this">
+                            <input type="text" name="hammertime" tabindex="-1" value="">
+                        </div>
+                        <!-- End of anti-spam field -->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first-name" name="first-name" type="text" class="required">
+                                <label for="first-name">First name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last-name" name="last-name" type="text">
+                                <label for="last-name">Last name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" name="email" type="email" class="required">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" name="message" class="materialize-textarea required"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            <button type="submit" name="send" class="btn-large disabled">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="wide-container">
+                <div class="row">
+                    <div class="col s12">
+                        <!-- Google map container -->
+                        <div id="map-canvas" class="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container contact-details">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <h5>Headquarters</h5>
+                        <div class="divider"></div>
+                        <address>
+                            1-57/229<br>
+                            Sri Ram Nagar Colony, Kothaguda<br>
+                            Hyderabad<br>
+                        </address>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <h5>Reach us</h5>
+                        <div class="divider"></div>
+                        <p>
+                            +919494920770<br>
+                            <a href="mailto:hello@wata.com">contact_us@pagon.in</a>
+                        </p>
+                    </div>
+                    <div class="col s12 m6 l4 modern-connect">
+                        <h5>Modern connect</h5>
+                        <div class="divider"></div>
+                        <p>
+                            <!-- Add your Skype link here -->
+                            <a href="skype:pagon?chat"><i class="fa fa-skype"></i>pagon.skype</a><br>
+                            <a href="#!"><i class="fa fa-facebook"></i>pagon.facebook</a><br>
+                            <a href="#!"><i class="fa fa-google-plus"></i>pagon.google</a><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2015 Pagon Technologies Pvt Ltd.
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+    <!-- Scripts-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIVFwyBIzh2v20kQ9MhMcL47fqgUXFmCI"></script>
+    <script src="./libs/jquery/jquery-2.1.1.js"></script>
+    <script src="./libs/materialize/js/materialize.min.js"></script>
+    <script src="./libs/gsa/TweenMax.min.js"></script>
+    <script src="./libs/gsa/plugins/ScrollToPlugin.min.js"></script>
+    <script src="./libs/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="./libs/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="./libs/gsa/easing/EasePack.min.js"></script>
+    <script src="scripts/wata.js"></script>
+    <script src="./scripts/config.js"></script>
+    <script src="./libs/triangles/js/triangles.js"></script>
+    <script src="./libs/owl-carousel/owl.carousel.js"></script>
+
+
+   
+
+
+    <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+        
+    });
+
+
+            
+        
+    (function(){
+        $("#testimonials-owl").owlCarousel({
+            items: 1,
+            itemsDesktop: [1199,1],
+            itemsDesktopSmall: [980,1],
+            itemsTablet: [768,1],
+            itemsTabletSmall: [590,1],
+            itemsMobile: [479,1],
+            autoPlay: true,
+            stopOnHover: true,
+            pagination: true,
+            transitionStyle: 'fadeUp'});
+    })();
+    
+$(document).ready(function(){
+        
+    var triangles = document.getElementById('triangles'),
+        nav = document.getElementById('nav'),
+        scrollPosition,
+        navHeight,
+        trianglesHeight;
+        
+    
+    function resizeTriangles() {
+        windowHeight = window.innerHeight;
+        trianglesHeight = windowHeight;
+        triangles.style.height = trianglesHeight + 'px';
+    } 
+    
+  var mq = window.matchMedia("(min-width: 600px)");
+
+     
+//    window.addEventListener('scroll',function(){
+//        console.log("in scrool ");
+//         trianglesHeight = triangles.clientHeight;
+//        scrollPosition = $(window).scrollTop();
+//        if(scrollPosition == 0)
+//            resizeTriangles();
+//        if(scrollPosition > (trianglesHeight- 100)){
+//            console.log("in if position");
+//            nav.className="navbar-fixed active";
+//        }else{
+//            console.log("in if position");
+//            nav.className = "navbar-fixed";
+//        }
+//    },false);
+});
+        
+    </script>
+    
+    
+</body>
+</html>
